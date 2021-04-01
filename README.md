@@ -1,14 +1,14 @@
-a simple to use linux terminal 
-
+a simple to use linux shell 
 
 # USE
 ```c
-    make
-    ./main.o
+make
+./shell
 ```
 
-custom command 
+builtin commands
 ```
-    exit - for exit
+ exit - for exit
 ```            
+
 for multiline string use \

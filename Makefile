@@ -1,4 +1,12 @@
+objects = main.o
 
+all : shell
 
-main.o: main.c
-	gcc main.c -o strt
+shell : $(objects)
+	$(CC) $^ -o $@
+
+%.o : %.c
+	$(CC) -o $@ -c $<
+
+clean :
+	rm -rf $(objects) shell
